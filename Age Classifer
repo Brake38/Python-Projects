@@ -1,0 +1,29 @@
+# Chase Brake
+# ITEC 2260
+# Age Classifier (p.162, #3)
+# conversion.py
+# This program indicates a person's stage of life based upon the
+# age entered. 
+
+# Variables
+# stages of life based upon the entered age
+Infant = 1
+Child = 12
+Teenager = 13
+Adult = 20
+
+#Enter the age of the individual.
+age = int(input("Please enter the person's age:"))
+
+#Determine the age of the individual by entering age.
+if age <= Infant:
+    print("You are an infant")
+else:
+    if age > Infant and age < Teenager:
+        print("You are a child.")
+    else:
+        if age >= Teenager and age < Adult:
+            print("You are a teenager.")
+        else:
+            if age >= Adult:
+                print("You are an adult.")
