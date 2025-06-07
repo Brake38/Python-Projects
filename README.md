@@ -1,7 +1,8 @@
 # Python-Projects
 This repository contains a collection of Python projects I have completed as part of my coursework. These projects demonstrate fundamental programming concepts and problem-solving techniques. 
 
-#Projects Included
+## Projects Included
+
 **Sales Tax Calculator**
 This is a simple program that asks the user to input a purchase amount. The program takes the user's input amount and applies States sales tax, County sales tax, and accumulates the total sales tax to create a total cost. 
 
@@ -19,3 +20,10 @@ This program reads the file's contents and determines the number of uppercase le
 
 **Employee and Production Worker Classes**
 This program keeps data attributes for Employee Name(s) and Employer number(s).
+
+## Technologies Utilized
+- Python 3.12.1
+- Visual Studio Code
+- Git & Github for version control
+
+
