@@ -1,0 +1,47 @@
+#Chase Brake
+#ITEC 2260
+#Character Analysis (p. 463, #7)
+# This program reads the file's contents and determines 
+# the number of uppercase letters, lowercase letters,
+# number of digits, and number of whitespace characters.
+
+def main():
+
+    uppercase_count = 0
+    lowercase_count = 0
+    digit_count = 0
+    whitespace_count = 0
+
+# This function calls forth the file from the directory and opens it.
+
+    import os
+    infile = open(os.path.expanduser("~/Desktop/text.txt"))
+
+# This function counts the amount of uppercase, lowercase, digits, and spaces
+# contained within the file.
+
+    file = infile.readlines()
+    for data in file:
+        for character in data:
+            if character.isupper():
+                uppercase_count += 1
+    
+            elif character.islower():
+                lowercase_count += 1
+            
+            elif character.isdigit():
+                digit_count += 1
+            
+            elif character.isspace():
+                whitespace_count += 1
+
+# This function prints out the total number of uppercase, lowercase, digits,
+# and whitespaces contained within the file.
+            
+        print("The uppercase count is", uppercase_count)
+        print("The lowercase count is", lowercase_count)
+        print("The digits count is", digit_count)
+        print("The whitespace count is", whitespace_count)
+        break
+
+main()
