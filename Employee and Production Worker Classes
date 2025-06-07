@@ -1,0 +1,58 @@
+# Chase Brake
+# ITEC 2260
+# Employee and ProductionWorker Classes, p. 606, #1
+# conversion.py
+# This program keeps data attributes for Employee name(s) and Employer number(s)
+
+# Employee Class
+class Employee:
+    def __init__(self, name, number):
+        self.__name = name
+        self.__number = number
+    
+    def get_name(self):
+        return self.__name
+    
+    def get_number(self):
+        return self.__number
+    
+    def set_name(self, name):
+        self.__name = name
+
+    def set_number(self, number):
+        self.__number = number
+
+#ProductionWorker class which is a subclass of the above Employee class
+class ProductionWorker(Employee):
+    def __init__(self, name, number, shift_number, hourly_pay_rate):
+        super().__init__(name, number)
+        self.__shift_number = shift_number
+        self.__hourly_pay_rate = hourly_pay_rate
+
+    def get_shift_number(self):
+        return self.__shift_number
+    
+    def get_hourly_pay_rate(self):
+        return self.__hourly_pay_rate
+    
+    def set_shift_number(self, shift_number):
+        self.__shift_number = shift_number
+
+    def set_hourly_pay_rate(self, hourly_pay_rate):
+        self.__hourly_pay_rate = hourly_pay_rate
+
+#Creating an object for the ProductionWorker class which prompts the user
+# to enter the appropriate data for each piece of information
+name = input("Please enter your employee name: ")
+number = input("Please enter your employee number: ")
+shift_number = int(input("Please enter your shift number (1 for morning shift, 2 for day shift, 3 for night shift): "))
+hourly_pay_rate = float(input("Please enter your hourly pay rate: "))
+
+worker = ProductionWorker(name, number, shift_number, hourly_pay_rate)
+
+#Use the object's accessor methods to display the entered information
+print("\nEmployee Information.")
+print("Your Name:", worker.get_name())
+print("Your Number:", worker.get_number())
+print("Your Shift Number:", worker.get_shift_number())
+print("Your Hourly Pay Rate:", worker.get_hourly_pay_rate())
