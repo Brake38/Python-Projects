@@ -1,0 +1,20 @@
+# Chase Brake
+# ITEC 2260
+# Population (p. 215 #13)
+# conversion.py
+# This program predicts the approximate
+# size of a population of organisms by value entered
+
+# Variables
+# These are the necessary questions to be asked to obtain the proper values. 
+STARTING_NUMBER_OF_ORGANISMS = int (input ("Please enter the starting number of organisms: ") )
+AVERAGE_DAILY_INCREASE = float (input ("Please enter the average daily population increase: ") )
+NUMBER_OF_DAYS_TO_MULTIPLY = int (input ("Please enter the number of days the organisms will be left to multiply: ") )
+AVERAGE_DAILY_INCREASE /= 100
+POPULATION = STARTING_NUMBER_OF_ORGANISMS
+
+# for loop for table of data
+print("Day" "\t" "Population")
+for day in range(1,10+1):
+    print (day, "\t", POPULATION)
+    POPULATION = POPULATION + (AVERAGE_DAILY_INCREASE * POPULATION)
