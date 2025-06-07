@@ -1,0 +1,58 @@
+#Chase Brake
+#ITEC 2260
+#Test Average and Grade (p.297, #15)
+#This program asks the user to input five test scores
+#and averages out the test scores
+
+#Variables
+A = 90-100
+B = 80-89
+C = 70-79
+D = 60-69
+F = 0-59
+
+#This function averages the various test scores
+def calc_average(score1,score2,score3,score4,score5):
+    average = (score1 + score2 + score3 + score4 + score5) / 5
+    return average
+
+#This function determines the letter grade based upon the score entered
+def determine_grade(score):
+    if score >= 90 and score <= 100:
+        return "A"
+    elif score >= 80 and score <= 89:
+        return "B"
+    elif score >= 70 and score <= 79:
+        return "C"
+    elif score >= 60 and score <= 69:
+        return "D"
+    elif score < 60:
+        return "F"
+    
+#This main function asks the user to enter the test scores, shows
+#each score along with its corresponding letter grade, and displays
+#the overall score average
+def main():
+    score1 = int(input("Please enter the first test score:"))
+    score2 = int(input("Please enter the second test score:"))
+    score3 = int(input("Please enter the third test score:"))
+    score4 = int(input("Please enter the fourth test score:"))
+    score5 = int(input("Please enter the fifth test score:"))
+
+    print("\nScore \t Grade")
+    grade = determine_grade(score1)
+    print(score1, "\t", grade)
+    grade = determine_grade(score2)
+    print(score2, "\t", grade)
+    grade = determine_grade(score3)
+    print(score3, "\t", grade)
+    grade = determine_grade(score4)
+    print(score4, "\t", grade)
+    grade = determine_grade(score5)
+    print(score5, "\t", grade)
+
+    average = calc_average(score1, score2, score3, score4, score5)
+
+    print("Average Score: ", average)
+
+main()
