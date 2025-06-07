@@ -1,0 +1,24 @@
+# Chase Brake - Programming Assignment 1
+
+# Amount of purchase
+amount_of_purchase = float( input( "Enter the amount of purchase: " ) )
+
+# State sales tax amount
+state_sales_tax = 0.05 * amount_of_purchase
+
+# County sales tax amount
+county_sales_tax = 0.025 * amount_of_purchase
+
+# State and county total sales tax
+total_sales_tax = state_sales_tax + county_sales_tax
+
+# Total cost for purchase including tax
+total_cost = amount_of_purchase + total_sales_tax
+
+# Sales tax purchasing program
+print( "\nTotal amount of purchase $" + format( amount_of_purchase, ",.2f" ), \
+       "State sales tax: $" + format( state_sales_tax, ",.2f"), \
+       "County sales tax: $" + format( county_sales_tax, ",.2f"),\
+       "Total sales tax: $" + format( total_sales_tax, ",.2f"), \
+       "Total cost: $" + format( total_cost, ",.2f"), sep = "\n" )
+
