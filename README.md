@@ -12,7 +12,7 @@ This program indicates a person's stage of life based upon the age entered using
 **Determining Organisms Population**
 This program implements a variety of constants to predict the approximate size of a population of organisms by value entered. 
 
-**Test Avereage and Grade**
+**Test Average and Grade**
 This program asks the user to input five test scores and averages out the test scores.
 
 **Character Analysis**
