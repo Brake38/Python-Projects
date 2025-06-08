@@ -1,4 +1,3 @@
-# Chase Brake - Programming Assignment 1
 
 # Amount of purchase
 amount_of_purchase = float( input( "Enter the amount of purchase: " ) )
