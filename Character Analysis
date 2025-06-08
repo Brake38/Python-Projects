@@ -1,6 +1,3 @@
-#Chase Brake
-#ITEC 2260
-#Character Analysis (p. 463, #7)
 # This program reads the file's contents and determines 
 # the number of uppercase letters, lowercase letters,
 # number of digits, and number of whitespace characters.
